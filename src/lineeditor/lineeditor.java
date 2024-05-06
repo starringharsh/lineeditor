@@ -8,13 +8,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
 public class lineeditor {
 	
-	private ArrayList<String> lines;
+	private List<String> lines;
 	private int len;
 	
-	private ArrayList<String> readFile(String path)
+	private void readFile(String path)
 	{
 		lines = new ArrayList<String>();
 		len = 0;
@@ -32,8 +33,6 @@ public class lineeditor {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		return lines;
 	}
 	
 	
